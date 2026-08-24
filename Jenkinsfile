@@ -12,5 +12,10 @@ pipeline {
                 sh 'go mod download'
             }
         }
+        stage('test') {
+            steps {
+                sh './jenkins/test.sh'
+            }
+        }
     }
 }
