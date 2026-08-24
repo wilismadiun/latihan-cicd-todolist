@@ -1,10 +1,5 @@
 pipeline {
-    agent {
-        docker {
-            image 'golang:1.26.5'
-            args '-p 3000:3000'
-        }
-    }
+    agent any
     
     // Posisikan environment di sini agar dibaca global oleh agent
     environment {

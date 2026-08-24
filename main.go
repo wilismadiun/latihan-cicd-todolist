@@ -1,9 +1,15 @@
 package main
 
-import "github.com/gin-gonic/gin"
+import (
+	"fmt"
+
+	"github.com/gin-gonic/gin"
+)
 
 func main() {
 	router := gin.Default()
+
+	fmt.Println("Build from commit: $CODEBUILD_RESOLVED_SOURCE_VERSION")
 
 	router.POST("/todos", AddTodoList)
 	router.GET("/todos", GetTodoList)
