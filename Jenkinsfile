@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'go mod downlod'
+                sh 'go mod download'
             }
         }
     }
