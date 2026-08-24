@@ -5,7 +5,10 @@ pipeline {
             args '-p 3000:3000'
         }
     }
-
+    environment {
+        GOCACHE = "${env.WORKSPACE}/.go-cache"
+        GOPATH = "${env.WORKSPACE}/.go-path"
+    }
     stages {
         stage('build') {
             steps {
