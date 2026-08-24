@@ -1,6 +1,6 @@
 module todo-app
 
-go 1.26.5
+go 1.23
 
 require (
 	github.com/bytedance/gopkg v0.1.4 // indirect
