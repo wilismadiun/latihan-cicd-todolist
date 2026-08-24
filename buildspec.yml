@@ -16,9 +16,9 @@ phases:
   
   build:
     commands:
-      - mv hello-world.go hello-world.go.tmp
-      - envsubst < "hello-world.go.tmp" > "hello-world.go"
-      - go build hello-world.go
+      - mv main.go main.go.tmp
+      - envsubst < "main.go.tmp" > "main.go"
+      - go build main.go
   
   post_build:
     commands:
