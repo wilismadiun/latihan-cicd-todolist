@@ -20,7 +20,7 @@ phases:
     commands:
       - mv main.go main.go.tmp
       - envsubst < "main.go.tmp" > "main.go"
-      - go build main.go
+      - go build -o todo-app .
   
   post_build:
     commands:
